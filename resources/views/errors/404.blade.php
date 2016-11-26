@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>404</title>
+	<title>The page can't be found</title>
 	<style type="text/css">
 		body {
 			background: #f5f5f5; font-family: 'Roboto', sans-serif;}
