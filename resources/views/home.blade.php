@@ -6,13 +6,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="card market,card markt" />
 	<meta property="og:title" content="Card markt"/>
-    <meta property="og:description" content="Card Markt is one of the fastest growing Card services provider."/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:url" content="http://www.cardmarkt.com"/>
-    <meta property="og:site_name" content="cardmarkt.com"/>
-    <meta property="og:image" content="images/logo2.png"/>
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="314" />
+	<meta property="og:description" content="Card Markt is one of the fastest growing Card services provider."/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="http://www.cardmarkt.com"/>
+	<meta property="og:site_name" content="cardmarkt.com"/>
+	<meta property="og:image" content="images/logo2.png"/>
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- css -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -25,6 +25,7 @@
 	<!-- //font -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
 </head>
 
 <body>
@@ -36,8 +37,8 @@
 			<div class="col-md-6 phone-cardl">
 				<ul>
 					<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
-					<li><a href="login.html">LOGIN |</a></li>
-					<li><a href="register.html">REGISTER</a></li>
+					<li><a href="{{url('/login')}}">LOGIN |</a></li>
+					<li><a href="{{url('/register')}}">REGISTER</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -57,11 +58,11 @@
 					</div> 
 					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 						<ul class="nav navbar-nav ">
-							<li class=" active"><a href="index.html" class="hyper "><span>Home</span></a></li>
-							<li><a href="about.html" class="hyper"><span>Buy Gift cards</span></a></li>	
-							<li><a href="about.html" class="hyper"><span>Sell Gift cards</span></a></li>
-							<li><a href="about.html" class="hyper"><span>About</span></a></li>
-							<li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
+							<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{url('/')}}" class="hyper "><span>Home</span></a></li>
+							<li class="{{ Request::is('buy-gift-cards') ? 'active' : '' }}"><a href="{{url('/buy-gift-cards')}}" class="hyper"><span>Buy Gift cards</span></a></li>	
+							<li class="{{ Request::is('sell-gift-cards') ? 'active' : '' }}"><a href="{{url('/sell-gift-cards')}}" class="hyper"><span>Sell Gift cards</span></a></li>
+							<li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{url('/about')}}" class="hyper"><span>About</span></a></li>
+							<li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{url('/contact')}}" class="hyper"><span>Contact Us</span></a></li>
 						</ul>
 					</div>
 				</nav>
@@ -167,20 +168,20 @@
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
 	<script>
-		cardls1.render();
+		// cardls1.render();
 
-		cardls1.cart.on('cardsb1_checkout', function (evt) {
-			var items, len, i;
+		// cardls1.cart.on('cardsb1_checkout', function (evt) {
+		// 	var items, len, i;
 
-			if (this.subtotal() > 0) {
-				items = this.items();
+		// 	if (this.subtotal() > 0) {
+		// 		items = this.items();
 
-				for (i = 0, len = items.length; i < len; i++) {
-					items[i].set('shipping', 0);
-					items[i].set('shipping2', 0);
-				}
-			}
-		});
+		// 		for (i = 0, len = items.length; i < len; i++) {
+		// 			items[i].set('shipping', 0);
+		// 			items[i].set('shipping2', 0);
+		// 		}
+		// 	}
+		// });
 	</script>  
 	<!-- //cart-js -->  
 </body>
