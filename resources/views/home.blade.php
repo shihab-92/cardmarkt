@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Fashion Club an Ecommerce Online Shopping Category  Flat Bootstrap responsive Website Template | Home :: cardlayouts</title>
+	<title>Card markt |Europe |card |Markt</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="card market,card markt" />
@@ -153,7 +153,7 @@
 				</ul>
 			</div>
 			<div class="clearfix"></div>
-			<p class="copy-right">© 2016 Fashion Club . All rights reserved | Design by <a href="http://shihab-sharar.com"> Shihab Sharar.</a></p>
+			<p class="copy-right">© 2016 Card Markt. All rights reserved | Design by <a href="http://shihab-sharar.com"> Shihab Sharar.</a></p>
 		</div>
 	</div>
 	<!-- cart-js -->
