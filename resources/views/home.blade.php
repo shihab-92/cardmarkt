@@ -5,6 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="card market,card markt" />
+	<meta property="og:title" content="Card markt"/>
+    <meta property="og:description" content="Card Markt is one of the fastest growing Card services provider."/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.cardmarkt.com"/>
+    <meta property="og:site_name" content="cardmarkt.com"/>
+    <meta property="og:image" content="images/logo2.png"/>
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="314" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- css -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
