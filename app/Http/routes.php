@@ -26,3 +26,9 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+Route::get('/buy-gift-cards', function () {
+    return view('buy-gift-cards');
+});
+Route::get('/sell-gift-cards', function () {
+    return view('sell-gift-cards');
+});

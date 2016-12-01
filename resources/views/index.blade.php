@@ -6,7 +6,7 @@
 		<h2>WELCOME TO</h2>
 		<h3>CARD <span>MARKT</span></h3>
 		<p>Suspendisse sed tellus id libero pretium interdum. Suspendisse potenti. Quisque consectetur elit sit amet vehicula tristique. </p>
-		<a href="about.html">Read More</a>
+		<a href="{{url('/about')}}">Read More</a>
 	</div>
 </div>
 <div class="top-heading">

@@ -231,7 +231,7 @@ button.cardview-cart:focus{
     min-height:380px;
 }
 .my-banner2{
-	background:url(../images/clothsbanner.jpg) no-repeat 0px 0px;
+	background:url(../images/cardgift.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	min-height:480px;
 }
@@ -286,7 +286,7 @@ button.cardview-cart:focus{
 
 /*--banner bottom--*/
 .banner-bootom-card-agileits,.top-products,.fandt,.top-brands,.newsletter,.footer,.content,.contact,.about,.team,.main-grid-border,.faq,.products,.collpse.tabs,.login,.check-out,.payment{
-	padding:50px 0;
+	padding:30px 0;
 }
 .top-products h3,.features h3,.top-brands h3,.contact h3,.about h3,.team h3,h3.agileits-icons-title,.faq h3,.products h3,.login h3,.check-out h3,.payment h3{
 	font-size:40px;
@@ -1040,7 +1040,7 @@ p.sbmincart-empty-text {
 }
 .cardls_dresses_grid_left_grid_sub {
     border: 1px solid #E1E1E1;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     padding: 2em 1.5em 1em;
 }
@@ -3113,7 +3113,7 @@ p.card-agile{
 		width: 85%;
 	}
 	.cardls_dresses_grid_left {
-		width: 85%;
+		width: 100%;
 	}
 	.contact input[type="text"] {
 		width: 95.8%;
