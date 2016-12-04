@@ -32,3 +32,6 @@ Route::get('/buy-gift-cards', function () {
 Route::get('/sell-gift-cards', function () {
     return view('sell-gift-cards');
 });
+Route::get('/admin', function () {
+    return view('admin');
+});
