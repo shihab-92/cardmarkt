@@ -891,5 +891,9 @@
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 	</div>
 </div>
+ @include('flash::message')
+<script>
+    $('#flash-overlay-modal').modal();
+</script>
 <!-- //top-brands -->
 @stop

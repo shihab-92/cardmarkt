@@ -25,7 +25,7 @@
 	<!-- //font -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/validation.min.js"></script>
 </head>
 
 <body>
@@ -110,8 +110,9 @@
 				<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
 			</div>
 			<div class="col-md-6 cardagile_newsletter_right">
-				<form action="#" method="post">
+				<form action="newsletter" method="post">
 					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="hidden" name="_token" value="{{ csrf_token() }}" />
 					<input type="submit" value="Subscribe" />
 				</form>
 			</div>
@@ -161,6 +162,10 @@
 	</div>
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+	</script>
 	<script>
 		// cardls1.render();
 

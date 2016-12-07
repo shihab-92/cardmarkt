@@ -1760,8 +1760,9 @@ p.single-price-text {
     color: #999;
     font-size: 1.1em;
     padding: 13px;
+    width: 11%;
 }
-.key input[type="text"], .key input[type="password"] {
+.key input[type="text"], .key input[type="password"] ,.key select{
     width: 89%;
     padding: 10px 10px;
     font-size: 1em;
@@ -3187,3 +3188,15 @@ p.card-agile{
   }
 }
 /*-- //responsive--*/
+input.error{
+  border:1px solid red!important;
+}
+textarea.error{
+  border:1px solid red!important;
+}
+select.error{
+  border:1px solid red!important;
+}
+label.error{
+  display: none !important;
+}

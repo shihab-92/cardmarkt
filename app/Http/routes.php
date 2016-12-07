@@ -11,27 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::group(['middleware' => 'guest'], function()
+{
+	Route::get('/','PagesController@getHomePage');
+	Route::post('/newsletter','PagesController@postNewsLetter');
+
+	Route::get('/about','PagesController@getAboutPage');
+	Route::get('/contact','PagesController@getContactPage');
+
+	Route::get('/login','PagesController@getLoginPage');
+	Route::post('/login','PagesController@authenticate');
+	Route::get('/register','PagesController@getRegisterPage');
+	Route::post('/register','PagesController@postRegisterPage');
+
+	Route::get('/buy-gift-cards','PagesController@getBuyPage');
+	Route::get('/sell-gift-cards', 'PagesController@getSellPage');
 });
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/buy-gift-cards', function () {
-    return view('buy-gift-cards');
-});
-Route::get('/sell-gift-cards', function () {
-    return view('sell-gift-cards');
-});
-Route::get('/admin', function () {
-    return view('admin');
+
+Route::group(['middleware' => 'auth'], function()
+{
+	Route::get('/logout','PagesController@logout');
+	Route::get('/admin','AdminController@getAdminPage');
 });
