@@ -17,7 +17,9 @@ Route::group(['middleware' => 'guest'], function()
 	Route::post('/newsletter','PagesController@postNewsLetter');
 
 	Route::get('/about','PagesController@getAboutPage');
+
 	Route::get('/contact','PagesController@getContactPage');
+	Route::post('/contact','MailController@sendContactMail');
 
 	Route::get('/login','PagesController@getLoginPage');
 	Route::post('/login','PagesController@authenticate');
