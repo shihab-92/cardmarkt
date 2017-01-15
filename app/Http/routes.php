@@ -13,6 +13,16 @@
 
 Route::group(['middleware' => 'guest'], function()
 {
+
+	Route::get('/login','PagesController@getLoginPage');
+	Route::post('/login','PagesController@authenticate');
+	Route::get('/register','PagesController@getRegisterPage');
+
+
+});
+
+Route::group(['middleware' => 'web'], function()
+{
 	Route::get('/','PagesController@getHomePage');
 	Route::post('/newsletter','PagesController@postNewsLetter');
 
@@ -21,17 +31,21 @@ Route::group(['middleware' => 'guest'], function()
 	Route::get('/contact','PagesController@getContactPage');
 	Route::post('/contact','MailController@sendContactMail');
 
-	Route::get('/login','PagesController@getLoginPage');
-	Route::post('/login','PagesController@authenticate');
-	Route::get('/register','PagesController@getRegisterPage');
-	Route::post('/register','PagesController@postRegisterPage');
-
 	Route::get('/buy-gift-cards','PagesController@getBuyPage');
 	Route::get('/sell-gift-cards', 'PagesController@getSellPage');
+
+	Route::post('/register','PagesController@postRegisterPage');
 });
 
 Route::group(['middleware' => 'auth'], function()
 {
 	Route::get('/logout','PagesController@logout');
 	Route::get('/admin','AdminController@getAdminPage');
+
+	Route::get('/add-users','featureController@addUsers');
+	Route::get('/view-users','featureController@getUsers');
+	Route::get('/view-users/{id}','featureController@editUsers');
+	Route::post('/update-user/{id}','featureController@updateUser');
+
+	
 });

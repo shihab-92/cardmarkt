@@ -35,11 +35,19 @@
 				<a href="{{url('/')}}"><img src="images/logo2.png" alt=" " /><h1>Card<span>markt</span></h1></a>
 			</div>
 			<div class="col-md-6 phone-cardl">
-				<ul>
-					<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
-					<li><a href="{{url('/login')}}">LOGIN |</a></li>
-					<li><a href="{{url('/register')}}">REGISTER</a></li>
-				</ul>
+				@if (Auth::check())
+					<ul>
+						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
+						<li><a href="{{url('admin')}}">Dashboard |</a></li>
+						<li><a href="{{url('logout')}}">logout</a></li>
+					</ul>
+				@else
+					<ul>
+						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
+						<li><a href="{{url('/login')}}">LOGIN |</a></li>
+						<li><a href="{{url('/register')}}">REGISTER</a></li>
+					</ul>
+				@endif
 			</div>
 			<div class="clearfix"></div>
 		</div>

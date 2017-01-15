@@ -66,6 +66,7 @@ class PagesController extends Controller
 		$accounts->type=$request->type;
 		$accounts->email=$request->Email;
 		$accounts->password=Hash::make($request->Password);
+		$accounts->role='user';
 
 		try {
 			$accounts->save();
