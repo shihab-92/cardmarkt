@@ -206,6 +206,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Notify' => Codecourse\Notify\Facades\Notify::class,
+        'Flash' => Laracasts\Flash\Flash::class,
 
 
     ],

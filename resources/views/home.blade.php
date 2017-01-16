@@ -38,8 +38,8 @@
 				@if (Auth::check())
 					<ul>
 						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
-						<li><a href="{{url('admin')}}">Dashboard |</a></li>
-						<li><a href="{{url('logout')}}">logout</a></li>
+						<li><a href="{{url('/admin')}}">Dashboard |</a></li>
+						<li><a href="{{url('/logout')}}">logout</a></li>
 					</ul>
 				@else
 					<ul>
@@ -171,9 +171,9 @@
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
 	<script src="js/custom.js"></script>
-	<script>
+<!-- 	<script>
 		$('div.alert').not('.alert-important').delay(3000).fadeOut(350);
-	</script>
+	</script> -->
 	<script>
 		// cardls1.render();
 

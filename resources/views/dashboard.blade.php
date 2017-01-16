@@ -58,8 +58,10 @@
                            <li>
                               <a><i class="fa fa-edit"></i> Category management <span class="fa fa-chevron-down"></span></a>
                               <ul class="nav child_menu">
-                                 <li><a href="form.html">Add category</a></li>
-                                 <li><a href="form_advanced.html">View category</a></li>
+                                 <li><a href="/add-category">Add category</a></li>
+                                 <li><a href="/add-subcategory">Add Subcategory</a></li>
+                                 <li><a href="/view-category">View category & Subcategory</a></li>
+                                 <li><a href="/add-brand">Add Brand</a></li>
                               </ul>
                            </li>
                            <li>
@@ -407,5 +409,22 @@
          });
       </script>
       <!-- /validator -->
+
+      <script>
+        var slug = function(str) {
+          var $slug = '';
+          var trimmed = $.trim(str);
+          $slug = trimmed.replace(/[^a-z0-9-]/gi, '-').
+          replace(/-+/g, '-').
+          replace(/^-|-$/g, '');
+          return $slug.toLowerCase();
+        }
+        $('#category-name').keyup(function() {
+          $('#category-slug').val(slug($('#category-name').val()));
+        });
+        $('#subcategory-name').keyup(function() {
+          $('#subcategory-slug').val(slug($('#subcategory-name').val()));
+        });
+      </script>
    </body>
 </html>

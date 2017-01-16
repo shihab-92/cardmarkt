@@ -12,7 +12,7 @@
                   <div class="clearfix"></div>
                </div>
                <div class="x_content">
-                  <form class="form-horizontal form-label-left" novalidate action="register" method="POST">
+                  <form class="form-horizontal form-label-left" novalidate action="admin-register" method="POST">
                   <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                      <p>
                      </p>

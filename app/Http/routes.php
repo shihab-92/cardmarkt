@@ -17,14 +17,13 @@ Route::group(['middleware' => 'guest'], function()
 	Route::get('/login','PagesController@getLoginPage');
 	Route::post('/login','PagesController@authenticate');
 	Route::get('/register','PagesController@getRegisterPage');
-
-
+	Route::post('/register','PagesController@postRegisterPage');
+	Route::post('/newsletter','PagesController@postNewsLetter');
 });
 
 Route::group(['middleware' => 'web'], function()
 {
 	Route::get('/','PagesController@getHomePage');
-	Route::post('/newsletter','PagesController@postNewsLetter');
 
 	Route::get('/about','PagesController@getAboutPage');
 
@@ -34,11 +33,12 @@ Route::group(['middleware' => 'web'], function()
 	Route::get('/buy-gift-cards','PagesController@getBuyPage');
 	Route::get('/sell-gift-cards', 'PagesController@getSellPage');
 
-	Route::post('/register','PagesController@postRegisterPage');
+	Route::post('/admin-register','PagesController@postRegisterPage');
 });
 
 Route::group(['middleware' => 'auth'], function()
 {
+
 	Route::get('/logout','PagesController@logout');
 	Route::get('/admin','AdminController@getAdminPage');
 
@@ -46,6 +46,20 @@ Route::group(['middleware' => 'auth'], function()
 	Route::get('/view-users','featureController@getUsers');
 	Route::get('/view-users/{id}','featureController@editUsers');
 	Route::post('/update-user/{id}','featureController@updateUser');
+
+	Route::get('/add-category','categoryController@addcategory');
+	Route::post('/store-category','categoryController@storecategory');
+
+	Route::get('/add-subcategory','categoryController@addsubcategory');
+	Route::post('/store-subcategory','categoryController@storesubcategory');
+
+	Route::get('/view-category','categoryController@viewCategory');
+	Route::get('/edit-category/{id}','categoryController@editCategory');
+	Route::post('/update-category/{id}','categoryController@updateCategory');
+	Route::get('/delete-category/{id}','categoryController@deleteCategory');
+	Route::get('/edit-category-relation/{id}','categoryController@editCategoryRelation');
+	Route::post('/update-category-relation/{id}','categoryController@updateCategoryRelation');
+
 
 	
 });
