@@ -2,11 +2,11 @@
 
 @section('content')
 <div class="banner-agile">
-	<div class="container">
+	<div class="container" style="text-align: center;">
 		<h2>WELCOME TO</h2>
 		<h3>CARD <span>MARKT</span></h3>
 		<p>Suspendisse sed tellus id libero pretium interdum. Suspendisse potenti. Quisque consectetur elit sit amet vehicula tristique. </p>
-		<a href="{{url('/about')}}">Read More</a>
+		<a href="{{url('/buy-gift-cards')}}" style="margin-right: 10px;">Buy card</a><a href="{{url('/sell-gift-cards')}}">Sell card</a>
 	</div>
 </div>
 <div class="top-heading">

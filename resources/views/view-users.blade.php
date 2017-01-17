@@ -41,7 +41,8 @@
                         <td>{{ $UserInformation->type }}</td>
                         <td>{{ $UserInformation->email }}</td>
                         <td>{{ $UserInformation->role }}</td>
-                         <td><a href="/view-users/{{ $UserInformation->id }}" class="btn btn-info">Edit</a></td>
+                         <td><a href="/view-users/{{ $UserInformation->id }}" class="btn btn-info">Edit</a>
+                         <a href="/delete-user/{{ $UserInformation->id }}" class="btn btn-danger">Delete</a></td>
                       </tr>
                       @endforeach
                      </tbody>

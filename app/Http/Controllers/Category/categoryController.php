@@ -47,28 +47,60 @@ class categoryController extends Controller
 
 	public function updatecategory($id)
 	{
-		$rules= array(
-			'category-name' =>'required|min:4' ,
-			'category-slug' =>'required|min:4',
-			);
+		if(Input::hasFile('category-image')){
+			$rules= array(
+				'category-name' =>'required|min:4' ,
+				'category-slug' =>'required|min:4',
+				'category-image' =>'required|image|mimes:jpeg,jpg,png',
+				);
 
-		$validator = Validator::make(Input::all(), $rules);
+			$validator = Validator::make(Input::all(), $rules);
 
-		if ($validator->fails()) {
-			flash('Your Category update has been failed!!', 'danger');
-		} else {
-			// store
-			$category =Category::find($id); 
-			$category->category_name=Input::get('category-name');
-			$category->category_slug=Input::get('category-slug');
-			// redirect
-			if ($category->save()) {
-				flash('Your Category update  is successful', 'success');
-			}else{
-				flash('Your Category update  has been failed!!', 'danger');
+			if ($validator->fails()) {
+				flash('Your Category update has been failed!!', 'danger');
+			} else {
+				//upload
+				$image = Input::file('category-image');
+				$filename  = time() . '.' . $image->getClientOriginalExtension();
+				Input::file('category-image')->move(base_path() . '/public/category_image', $filename);
+				// update
+				$category =Category::find($id); 
+				$category->category_name=Input::get('category-name');
+				$category->category_slug=Input::get('category-slug');
+				$category->category_image=$filename;
+				// redirect
+				if ($category->save()) {
+					flash('Your Category update  is successful', 'success');
+				}else{
+					flash('Your Category update  has been failed!!', 'danger');
+				}
+
 			}
+		}else{
+			$rules= array(
+				'category-name' =>'required|min:4' ,
+				'category-slug' =>'required|min:4',
+				);
 
+			$validator = Validator::make(Input::all(), $rules);
+
+			if ($validator->fails()) {
+				flash('Your Category update has been failed!!', 'danger');
+			} else {
+			// store
+				$category =Category::find($id); 
+				$category->category_name=Input::get('category-name');
+				$category->category_slug=Input::get('category-slug');
+			// redirect
+				if ($category->save()) {
+					flash('Your Category update  is successful', 'success');
+				}else{
+					flash('Your Category update  has been failed!!', 'danger');
+				}
+
+			}
 		}
+
 
 		return back();
 	}

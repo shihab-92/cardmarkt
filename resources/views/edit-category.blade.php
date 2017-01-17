@@ -20,7 +20,7 @@
                   </div>
                   @endif
                   <form class="form-horizontal form-label-left" novalidate action="/update-category/{{$category->id}}" method="POST" enctype="multipart/form-data">
-                  <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                      <p></p>
                      <div class="item form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category-name">Category Name <span class="required">*</span>
@@ -36,6 +36,22 @@
                            <input id="category-slug" class="form-control col-md-7 col-xs-12"  name="category-slug" placeholder="Card-slug-placeholder" required="required" type="text" value="{{$category->category_slug}}">
                         </div>
                      </div>
+                     @if($category->parent_id==0)
+                     <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category-image">Current Category Image<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <img src="/category_image/{{$category->category_image}}">
+                        </div>
+                     </div>
+                     <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category-image">Category Image<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                           <input id="category-image" class="form-control col-md-7 col-xs-12"  name="category-image"  required="required" type="file" value="">
+                        </div>
+                     </div>
+                     @endif
                      <div class="ln_solid"></div>
                      <div class="form-group">
                         <div class="col-md-6 col-md-offset-3">

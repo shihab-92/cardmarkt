@@ -36,13 +36,7 @@
                            <input id="category-slug" class="form-control col-md-7 col-xs-12"  name="category-slug" placeholder="Card-slug-placeholder" required="required" type="text" value="">
                         </div>
                      </div>
-                     <div class="item form-group">
-                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category-image">Category Image<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                           <input id="category-image" class="form-control col-md-7 col-xs-12"  name="category-image"  required="required" type="file" value="">
-                        </div>
-                     </div>
+
                      <div class="item form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12"></label>
                         <div class="col-md-6 col-sm-6 col-xs-12">

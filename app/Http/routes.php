@@ -46,6 +46,7 @@ Route::group(['middleware' => 'auth'], function()
 	Route::get('/view-users','featureController@getUsers');
 	Route::get('/view-users/{id}','featureController@editUsers');
 	Route::post('/update-user/{id}','featureController@updateUser');
+	Route::get('/delete-user/{id}','featureController@deleteUser');
 
 	Route::get('/add-category','categoryController@addcategory');
 	Route::post('/store-category','categoryController@storecategory');

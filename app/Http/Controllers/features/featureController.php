@@ -56,6 +56,7 @@ class featureController extends Controller
 		$accounts->lastname=Input::get('lastName');
 		$accounts->type=Input::get('type');
 		$accounts->email=Input::get('Email');
+		$accounts->role=Input::get('role');
 		$accounts->password=Hash::make(Input::get('Password'));
 
 		try {
@@ -69,5 +70,10 @@ class featureController extends Controller
 		return Redirect::to('view-users');
 
 	}
-	
+		public function deleteUser($id)
+	{
+		$accounts =accounts::find($id)->delete();
+		flash('Your category delete  is successful', 'success');
+		return back();
+	}
 }

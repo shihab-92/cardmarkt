@@ -29,86 +29,70 @@
 </head>
 
 <body>
-	<div class="header-top-cardlayouts">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			<div class="col-md-6 logo-card">
-				<a href="{{url('/')}}"><img src="images/logo2.png" alt=" " /><h1>Card<span>markt</span></h1></a>
-			</div>
-			<div class="col-md-6 phone-cardl">
-				@if (Auth::check())
-					<ul>
-						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
-						<li><a href="{{url('/admin')}}">Dashboard |</a></li>
-						<li><a href="{{url('/logout')}}">logout</a></li>
-					</ul>
-				@else
-					<ul>
-						<li><span class="glyphicon glyphicon-user" aria-hidden="true"></span></li>
-						<li><a href="{{url('/login')}}">LOGIN |</a></li>
-						<li><a href="{{url('/register')}}">REGISTER</a></li>
-					</ul>
-				@endif
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<div class="header-bottom-cardls">
-		<div class="container">
-			<div class="col-md-7 navigation-agileits">
-				<nav class="navbar navbar-default">
-					<div class="navbar-header nav_2">
-						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div> 
-					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-						<ul class="nav navbar-nav ">
-							<li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{url('/')}}" class="hyper "><span>Home</span></a></li>
-							<li class="{{ Request::is('buy-gift-cards') ? 'active' : '' }}"><a href="{{url('/buy-gift-cards')}}" class="hyper"><span>Buy Gift cards</span></a></li>	
-							<li class="{{ Request::is('sell-gift-cards') ? 'active' : '' }}"><a href="{{url('/sell-gift-cards')}}" class="hyper"><span>Sell Gift cards</span></a></li>
-							<li class="{{ Request::is('about') ? 'active' : '' }}"><a href="{{url('/about')}}" class="hyper"><span>About</span></a></li>
-							<li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="{{url('/contact')}}" class="hyper"><span>Contact Us</span></a></li>
-						</ul>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+
+				<a class="navbar-brand" href="/">CardMarkt</a>
+				<div class="col-md-2 cart-wthree visible-xs">
+					<div class="cart"> 
+						<form action="#" method="post" class="last"> 
+							<input type="hidden" name="cmd" value="_cart" />
+							<input type="hidden" name="display" value="1" />
+							<button class="cardview-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+						</form>  
 					</div>
-				</nav>
-			</div>
-			<script>
-				$(document).ready(function(){
-					$(".dropdown").hover(            
-						function() {
-							$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-							$(this).toggleClass('open');        
-						},
-						function() {
-							$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-							$(this).toggleClass('open');       
-						}
-						);
-				});
-			</script>
-			<div class="col-md-4 search-agileinfo">
-				<form action="#" method="post">
-					<input type="search" name="Search" placeholder="Search for a Product..." required="">
-					<button type="submit" class="btn btn-default search" aria-label="Left Align">
-						<i class="fa fa-search" aria-hidden="true"> </i>
-					</button>
-				</form>
-			</div>
-			<div class="col-md-1 cart-wthree">
-				<div class="cart"> 
-					<form action="#" method="post" class="last"> 
-						<input type="hidden" name="cmd" value="_cart" />
-						<input type="hidden" name="display" value="1" />
-						<button class="cardview-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-					</form>  
 				</div>
 			</div>
-			<div class="clearfix"></div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="{{ Request::is('/') ? 'active' : '' }}">
+						<a href="{{url('/')}}" class="hyper "><span>Home</span></a>
+					</li>
+					<li class="{{ Request::is('buy-gift-cards') ? 'active' : '' }}">
+						<a href="{{url('/buy-gift-cards')}}" class="hyper"><span>Buy Gift cards</span></a>
+					</li>	
+					<li class="{{ Request::is('sell-gift-cards') ? 'active' : '' }}">
+						<a href="{{url('/sell-gift-cards')}}" class="hyper"><span>Sell Gift cards</span></a>
+					</li>
+					<li class="hidden-md hidden-sm">
+						<form class="navbar-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-success">Submit</button>
+						</form>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					@if (Auth::check())
+					<li><a href="{{url('/admin')}}"><span class="glyphicon glyphicon-user"></span> Dashboard |</a></li>
+					<li><a href="{{url('/logout')}}"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
+					@else
+					<li><a href="{{url('/login')}}"><span class="glyphicon glyphicon-log-in"></span> LOGIN |</a></li>
+					<li><a href="{{url('/register')}}"><span class="glyphicon glyphicon-user"></span> REGISTER</a></li>
+					@endif
+					<li class="hidden-xs">
+						<div class="col-md-1 cart-wthree">
+							<div class="cart"> 
+								<form action="#" method="post" class="last"> 
+									<input type="hidden" name="cmd" value="_cart" />
+									<input type="hidden" name="display" value="1" />
+									<button class="cardview-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+								</form>  
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
+	</nav>
+
 	@yield('content');
 	<!-- newsletter -->
 	<div class="newsletter">
