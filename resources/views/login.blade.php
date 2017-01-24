@@ -7,6 +7,13 @@
 		<div class="form-cardagile">
 			<h3>Login</h3>
 			<form action="login" method="post">
+				@if (session()->has('flash_notification.message'))
+				<div class="alert alert-{{ session('flash_notification.level') }}">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+
+					{!! session('flash_notification.message') !!}
+				</div>
+				@endif
 				<input type="hidden" name="_token" value="{{ csrf_token() }}" />
 				<div class="key">
 					<i class="fa fa-envelope" aria-hidden="true"></i>

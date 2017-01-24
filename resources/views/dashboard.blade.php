@@ -17,6 +17,8 @@
       <link href="/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
       <!-- jVectorMap -->
       <link href="/css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+      <!-- iCheck -->
+      <link href="/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
       <!-- Datatables -->
       <link href="/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
       <link href="/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -62,6 +64,7 @@
                                  <li><a href="/add-subcategory">Add Subcategory</a></li>
                                  <li><a href="/view-category">View category & Subcategory</a></li>
                                  <li><a href="/add-brand">Add Brand</a></li>
+                                 <li><a href="/view-brands">View Brands</a></li>
                               </ul>
                            </li>
                            <li>
@@ -100,7 +103,7 @@
                            </a>
                            <ul class="dropdown-menu dropdown-usermenu pull-right">
                               <li><a href="javascript:;"> Profile</a></li>
-                              <li><a href="logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                              <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                            </ul>
                         </li>
                      </ul>
@@ -378,6 +381,9 @@
       
       <!-- validator -->
       <script src="/vendors/validator/validator.js"></script>
+
+      <!-- iCheck -->
+      <script src="/vendors/iCheck/icheck.min.js"></script>
       <!-- validator -->
       <script>
          // initialize the validator function
@@ -424,6 +430,10 @@
         });
         $('#subcategory-name').keyup(function() {
           $('#subcategory-slug').val(slug($('#subcategory-name').val()));
+        });
+        
+        $('#brand-name').keyup(function() {
+          $('#brand-slug').val(slug($('#brand-name').val()));
         });
       </script>
    </body>

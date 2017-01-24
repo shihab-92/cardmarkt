@@ -3209,3 +3209,6 @@ label.error{
 .navbar-collapse.in {
     overflow-y: visible;
 }
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 440px;
+}

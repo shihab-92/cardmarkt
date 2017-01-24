@@ -88,6 +88,18 @@
 							</div>
 						</div>
 					</li>
+					<li>
+						<form class="navbar-form">
+							<div class="form-group">
+								<select class="form-control">
+									<option>ENG</option>
+									<option>ITA</option>
+									<option>DEU</option>
+									<option>FRA</option>
+								</select>
+							</div>
+						</form>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -143,7 +155,6 @@
 			<div class="col-md-3 footer-grids fgd4">
 				<h4>My Account</h4> 
 				<ul>
-
 					<li><a href="{{url('/login')}}">Login</a></li>
 					<li><a href="{{url('/register')}}">Register</a></li>
 				</ul>

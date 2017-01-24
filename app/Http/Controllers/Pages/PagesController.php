@@ -105,8 +105,10 @@ class PagesController extends Controller
 		if (Auth::attempt(['email' => $request->Email, 'password' => $request->Password])) {
             // Authentication passed...
 			$current_user = auth()->user();
+			flash('Your login is successful', 'success');
 			return Redirect::to('admin');
 		}else{
+			flash('Invalid Login attempt!!', 'danger');
 			return back();
 		}
 	}
@@ -114,6 +116,7 @@ class PagesController extends Controller
 	public function logout()
 	{
 		Auth::logout();
+		flash('Your logout is successful', 'success');
 		return Redirect::to('login');
 	}
 }

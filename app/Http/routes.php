@@ -61,6 +61,12 @@ Route::group(['middleware' => 'auth'], function()
 	Route::get('/edit-category-relation/{id}','categoryController@editCategoryRelation');
 	Route::post('/update-category-relation/{id}','categoryController@updateCategoryRelation');
 
+	Route::get('/add-brand','brandController@addbrand');
+	Route::post('/store-brand','brandController@storebrand');
+	Route::get('/view-brands','brandController@viewbrand');
 
+	Route::get('/edit-brand/{id}','brandController@updatebrand');
+	Route::post('/edit-brand/{id}','brandController@refreshbrand');
+	Route::get('/delete-brand/{id}','brandController@deletebrand');
 	
 });

@@ -24,6 +24,7 @@ class categoryController extends Controller
 		return view('add-category');
 	}
 
+
 	public function addsubcategory()
 	{
 		$category = DB::table('categories')
@@ -34,16 +35,22 @@ class categoryController extends Controller
 		->orderby('category_name','ASC')->get();
 		return view('add-subcategory',compact('category','subcategory'));
 	}
+
+
 	public function viewcategory()
 	{	
 		$category=Category::all();
 		return view('view-category',compact('category'));
 	}
+
+
 	public function editcategory($id)
 	{
 		$category=Category::find($id);
 		return view('edit-category',compact('category'));
 	}
+
+
 
 	public function updatecategory($id)
 	{
@@ -105,6 +112,9 @@ class categoryController extends Controller
 		return back();
 	}
 
+
+
+
 	public function storecategory()
 	{
 		$rules= array(
@@ -141,6 +151,8 @@ class categoryController extends Controller
 
 	}
 
+
+
 	public function storesubcategory()
 	{
 		$rules= array(
@@ -172,6 +184,8 @@ class categoryController extends Controller
 		return back();
 	}
 
+
+
 	public function deletecategory($id)
 	{
 		$category =Category::find($id)->delete();
@@ -180,6 +194,8 @@ class categoryController extends Controller
 		flash('Your category delete  is successful', 'success');
 		return back();
 	}
+
+
 
 	public function editCategoryRelation($id)
 	{
@@ -192,6 +208,8 @@ class categoryController extends Controller
 		->orderby('category_name','ASC')->get();
 		return view('edit-category-relation',compact('category','subcategory','selected_category'));
 	}
+	
+
 	
 	public function updateCategoryRelation($id)
 	{
