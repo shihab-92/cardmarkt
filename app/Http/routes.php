@@ -68,5 +68,7 @@ Route::group(['middleware' => 'auth'], function()
 	Route::get('/edit-brand/{id}','brandController@updatebrand');
 	Route::post('/edit-brand/{id}','brandController@refreshbrand');
 	Route::get('/delete-brand/{id}','brandController@deletebrand');
+
+	
 	
 });

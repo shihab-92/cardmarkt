@@ -123,7 +123,7 @@
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color:#00e58b;
+    background-color:#9999ff;
 }
 .search-agileinfo input[type="search"] {
     width: 87%;
@@ -143,12 +143,12 @@
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color:#00e58b;
+    background-color:#9999ff;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
  color:#fff;
- background-color:#00e58b;
+ background-color:#9999ff;
 }
 .dropdown-menu.multi {
     min-width: 745px;
@@ -183,7 +183,7 @@ button.search {
     height: 43px;
     outline: none;
     box-shadow: none;
-    background:#00e58b;
+    background:#9999ff;
     padding: 0;
     border-radius: inherit;
     -webkit-appearance: none;
@@ -249,7 +249,7 @@ button.cardview-cart:focus{
 	font-size:35px;
 	text-align:center;
 	margin-top:18%;
-	color: #00e58b;
+	color: #9999ff;
 }
 .banner-agile h3{
 	font-size:50px;
@@ -259,7 +259,7 @@ button.cardview-cart:focus{
 	font-weight:700;
 }
 .banner-agile h3 span{
-	color:#00e58b;
+	color:#9999ff;
 }
 .banner-agile p{
 	width:49%;
@@ -278,7 +278,7 @@ button.cardview-cart:focus{
 	margin-top:20px;
 }
 .banner-agile a:hover{
-	background:#00e58b;
+	background:#9999ff;
 }
 /*--//banner--*/
 .top-heading{
@@ -510,7 +510,7 @@ ul.resp-tabs-list li:nth-child(3):after{
    .product-img .p-mask, .row .product .vm-product-media-container .p-mask {
     opacity: 0;
     visibility: hidden;
-    background:rgba(0, 229, 139, 0.52);
+    background:rgba(153,153,255, 0.52);
     bottom: 0%;
     left:0;
     position: absolute;
@@ -626,7 +626,7 @@ button.cardls-cart.pcardls-cart .fa{
   left: 15px;
   right: 15px;
   bottom: 0;
-  background:#00e58b;
+  background:#9999ff;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -700,12 +700,12 @@ ul.wmuSliderPagination {
     border-radius:50%;
 }
 .wmuSliderPagination a.wmuActive {
-	background: #00e58b;
-    box-shadow: 0px 0px 10px #00e58b;
-    -webkit-box-shadow: 0px 0px 10px #00e58b;
-    -moz-box-shadow: 0px 0px 10px #00e58b;
-    -o-box-shadow: 0px 0px 10px #00e58b;
-    -ms-box-shadow: 0px 0px 10px #00e58b;
+	background: #9999ff;
+    box-shadow: 0px 0px 10px #9999ff;
+    -webkit-box-shadow: 0px 0px 10px #9999ff;
+    -moz-box-shadow: 0px 0px 10px #9999ff;
+    -o-box-shadow: 0px 0px 10px #9999ff;
+    -ms-box-shadow: 0px 0px 10px #9999ff;
 }
 /* Default Skin */
 .wmuGallery .wmuGalleryImage {
@@ -789,7 +789,7 @@ ul.wmuSliderPagination {
     padding: 10px 0;
     width: 15%;
     border: none;
-    background-color: #00e58b;
+    background-color: #9999ff;
     color:#fff;
 }
 .cardagile_newsletter_right input[type="submit"]:hover{
@@ -868,7 +868,7 @@ ul.wmuSliderPagination {
 	color:#000;
 }
 .footer ul li a:hover{
-	color:#00e58b;
+	color:#9999ff;
 }
 p.copy-right{
 	margin-top:40px;
@@ -1011,12 +1011,12 @@ p.sbmincart-empty-text {
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    background: #00e58b;
-    -moz-box-shadow: inset 0 0 6px #00e58b;
-    -o-box-shadow: inset 0 0 6px #00e58b;
-    -ms-box-shadow: inset 0 0 6px #00e58b;
-    -webkit-box-shadow: inset 0 0 6px #00e58b;
-    box-shadow: inset 0 0 6px #00e58b; 	
+    background: #9999ff;
+    -moz-box-shadow: inset 0 0 6px #9999ff;
+    -o-box-shadow: inset 0 0 6px #9999ff;
+    -ms-box-shadow: inset 0 0 6px #9999ff;
+    -webkit-box-shadow: inset 0 0 6px #9999ff;
+    box-shadow: inset 0 0 6px #9999ff; 	
 } 
 /*-- //cart-css --*/ 
 
@@ -1032,7 +1032,7 @@ p.sbmincart-empty-text {
 }
 .cardls_dresses_grid_left_grid h3:before {
     content: '';
-    background: #00e58b;
+    background: #9999ff;
     width: 10%;
     height: 2px;
     position: absolute;
@@ -1142,7 +1142,7 @@ p.sbmincart-empty-text {
 	outline:none;
 }
 .contact input[type="submit"] {
- background: #00e58b;
+ background: #9999ff;
  padding: 8px 15px;
  outline: none;
  margin-top:10px;
@@ -1166,7 +1166,7 @@ p.sbmincart-empty-text {
 /*-- about --*/
 .about h4 {
     font-size: 2.2em;
-    color: #00e58b;
+    color: #9999ff;
     text-align: left;
 }
 .about img {
@@ -1213,7 +1213,7 @@ p.sbmincart-empty-text {
 }
 /*-- about-gallery --*/
 .about-cardls-row {
-    background:#00e58b;
+    background:#9999ff;
     margin-right: 5em;
     padding:1.5em;
 }
@@ -1273,12 +1273,12 @@ p.sbmincart-empty-text {
 .nbs-flexisel-nav-left {
     left: 0;
     background: url(../images/img-sprite.png) no-repeat 5px center;
-    background-color:#00e58b;
+    background-color:#9999ff;
 }
 .nbs-flexisel-nav-right { 
 	right: 0%;
     background: url(../images/img-sprite.png) no-repeat -20px center;
-    background-color: #00e58b;
+    background-color: #9999ff;
 }
 /*-- //about --*/
 /*-- products --*/
@@ -1387,7 +1387,7 @@ p.sbmincart-empty-text {
 }
 .about-bottom  a{
 	padding:8px 20px;
-	background:#00e58b;
+	background:#9999ff;
 	color:#fff;
 	float:right;
 }
@@ -1552,7 +1552,7 @@ a.pa_italic:focus {
 .single-top-right h3 {
     text-transform: capitalize;
     font-size: 2em;
-    color: #00e58b;
+    color: #9999ff;
     margin-bottom: .3em;
     text-align: left;
 }
@@ -1616,9 +1616,9 @@ p.single-price-text {
     -ms-transition: .5s all;
     transition: .5s all;
     display: inline-block;
-    background: #00e58b;
+    background: #9999ff;
     outline: none;
-    border: 1px solid #00e58b;
+    border: 1px solid #9999ff;
     color: #fff;
 }
 .single-top-right .cardls-cart:hover{
@@ -1631,11 +1631,11 @@ p.single-price-text {
 .single-top-right .cardls-cart.cardls-cart-like {
     margin-left: 1em;
     background: none;
-    border: 1px solid  #00e58b;
-    color: #00e58b;
+    border: 1px solid  #9999ff;
+    color: #9999ff;
 }
 .single-top-right .cardls-cart.cardls-cart-like:hover{ 
-    background:  #00e58b;
+    background:  #9999ff;
     color: #fff;
 } 
 .single-page-icons.social-icons {
@@ -1775,7 +1775,7 @@ p.single-price-text {
     background: none;
 }
 .form-cardagile input[type="submit"] {
-    background: #00e58b;
+    background: #9999ff;
     color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
@@ -1870,7 +1870,7 @@ a.at-in{
     padding: 7px 10px;
     width: auto;
     font-size: 1em;
-    background: #00e58b;
+    background: #9999ff;
 }
 .add-1:hover {
     text-decoration: none;
@@ -2353,7 +2353,7 @@ p.card-agile{
 	}
 	.navbar-toggle {
 		border-radius: 0;
-		background:#00e58b;
+		background:#9999ff;
 		float:right;
 		transition: 0.5s all;
 		-webkit-transition: 0.5s all;
@@ -2831,7 +2831,7 @@ p.card-agile{
 		font-size: 1.8em;
 	}
 	.about-cardls-row {
-		background: #00e58b;
+		background: #9999ff;
 		padding: 1em;
 	}
 	.cardagile_newsletter_left, .cardagile_newsletter_right {
