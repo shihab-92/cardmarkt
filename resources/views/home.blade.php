@@ -38,7 +38,7 @@
 					<span class="icon-bar"></span>                        
 				</button>
 
-				<a class="navbar-brand" href="/">CardMarkt</a>
+				<a class="navbar-brand" href="/"><img src="/images/logo2.png" style="width:100px;"></a>
 				<div class="col-md-2 cart-wthree visible-xs">
 					<div class="cart"> 
 						<form action="#" method="post" class="last"> 
@@ -65,7 +65,7 @@
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search">
 							</div>
-							<button type="submit" class="btn btn-success">Submit</button>
+							<button type="submit" class="btn btn-success" style="background-color: #9999ff;border-color:#9999ff;">Submit</button>
 						</form>
 					</li>
 				</ul>
@@ -127,10 +127,8 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-3 footer-grids fgd1">
-				<a href="index.html"><img src="images/logo2.png" alt=" " /><h3>Card<span>Markt</span></h3></a>
+				<a href="index.html"><img src="images/logo2.png" alt=" " style="width: 200px;" /></a>
 				<ul>
-					<li>1234k Avenue, 4th block,</li>
-					<li>New York City.</li>
 					<li><a href="mailto:info@example.com">info@example.com</a></li>
 					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
@@ -160,7 +158,6 @@
 				</ul>
 			</div>
 			<div class="clearfix"></div>
-			<p class="copy-right">© 2016 Card Markt. All rights reserved | Developed & Designed by <a href="http://shihab-sharar.com"> Shihab Sharar.</a></p>
 		</div>
 	</div>
 	<!-- cart-js -->

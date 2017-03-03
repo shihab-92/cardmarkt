@@ -73,7 +73,7 @@
 	font-size:40px;
 	position:relative;
 }
-.logo-card img,.footer img {
+/*.logo-card img,.footer img {
     width: 7%;
     position: absolute;
     top: 0;
@@ -83,7 +83,7 @@
 	width:13%;
 	top: 2px;
     left: -22px;
-}
+}*/
 .logo-card a h1 span ,.footer a h3 span {
     color: #999;
     font-size: 15px;

@@ -69,6 +69,10 @@ Route::group(['middleware' => 'auth'], function()
 	Route::post('/edit-brand/{id}','brandController@refreshbrand');
 	Route::get('/delete-brand/{id}','brandController@deletebrand');
 
-	
+	Route::get('/add-card','cardController@addCard');
+	Route::post('/add-card','cardController@storeCard');
+	Route::get('/view-card','cardController@viewCard');
+	Route::get('/update-card','cardController@updateCard');
+	Route::post('/update-card','cardController@storeupdatedCard');
 	
 });

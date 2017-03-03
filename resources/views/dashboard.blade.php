@@ -78,8 +78,8 @@
                            <li>
                               <a><i class="fa fa-edit"></i> Card management <span class="fa fa-chevron-down"></span></a>
                               <ul class="nav child_menu">
-                                 <li><a href="form.html">Add card</a></li>
-                                 <li><a href="form_advanced.html">View cards</a></li>
+                                 <li><a href="/add-card">Add card</a></li>
+                                 <li><a href="/view-card">View cards</a></li>
                               </ul>
                            </li>
                         </ul>
@@ -425,6 +425,7 @@
           replace(/^-|-$/g, '');
           return $slug.toLowerCase();
         }
+
         $('#category-name').keyup(function() {
           $('#category-slug').val(slug($('#category-name').val()));
         });
@@ -434,6 +435,33 @@
         
         $('#brand-name').keyup(function() {
           $('#brand-slug').val(slug($('#brand-name').val()));
+        });
+
+        $('#validity').daterangepicker({
+          singleDatePicker: true,
+          calender_style: "picker_1"
+        }, function(start, end, label) {
+          console.log(start.toISOString(), end.toISOString(), label);
+        });
+
+        var discount = function(percent,original) {
+          return original-(original * percent/100);
+        }
+
+        $('#value').keyup(function() {
+          $('#sell_price').val(discount($('#discount').val(),$('#value').val()));
+        });
+
+        $('#discount').keyup(function() {
+          $('#sell_price').val(discount($('#discount').val(),$('#value').val()));
+        });
+
+        $('#card-country').change(function() {
+         if($(this).val()==1){
+          $('#value').attr("placeholder", "Example: 45 CHF");
+         }else{
+          $('#value').attr("placeholder", "Example: 45 EUR");
+         }
         });
       </script>
    </body>
