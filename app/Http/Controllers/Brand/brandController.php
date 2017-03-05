@@ -29,6 +29,7 @@ class brandController extends Controller
 		$rules= array(
 			'brand-name' =>'required|min:4' ,
 			'brand-slug' =>'required|min:4',
+			'value-link' =>'required',
 			'brand-image' =>'required|image|mimes:jpeg,jpg,png',
 			'brand-category-subcategory' =>'required',
 			);
@@ -47,6 +48,7 @@ class brandController extends Controller
 			$brands = Brands:: create([
 				'brand_name'=>Input::get('brand-name'),
 				'brand_slug'=>Input::get('brand-slug'),
+				'card_value_link'=>Input::get('value-link'),
 				'brand_image'=>$filename]);
 			$categories=Input::get('brand-category-subcategory');
 			foreach ($categories as $key => $category) {
@@ -95,6 +97,7 @@ class brandController extends Controller
 		$rules= array(
 			'brand-name' =>'required|min:4' ,
 			'brand-slug' =>'required|min:4',
+			'value-link' =>'required',
 			'brand-image' =>'image|mimes:jpeg,jpg,png',
 			'brand-category-subcategory' =>'required',
 			);
@@ -102,7 +105,7 @@ class brandController extends Controller
 		$validator = Validator::make(Input::all(), $rules);
 
 		if ($validator->fails()) {
-			flash('Your Brand update has been failed!!', 'danger');
+			flash('Your Brand image update has been failed!!', 'danger');
 		} else {
 			if(Input::hasFile('brand-image')){
             	//upload
@@ -115,18 +118,19 @@ class brandController extends Controller
 			// update
 			$brands->brand_name=Input::get('brand-name');
 			$brands->brand_slug=Input::get('brand-slug');
+			$brands->card_value_link=Input::get('value-link');
 			$brands->brand_image=$filename;
 			$brands->save();
 			$categories=Input::get('brand-category-subcategory');
-
 			foreach ($categories as $key => $category) {
 				$brand_category = Brand_category:: create([
 					'brand_id'=>$brands->id,
 					'category_id'=>$category]);
 			}
 
+
 			//redirect
-			if ($brand_category) {
+			if ($brands) {
 				flash('Your Brand update  is successful', 'success');
 			}else{
 				flash('Your Brand update  has been failed!!', 'danger');

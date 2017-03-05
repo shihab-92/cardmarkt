@@ -64,7 +64,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Formal shoes" /> 
+										<input type="hidden" name="w3ls1_item" value="Formal shoes" /> 
 										<input type="hidden" name="amount" value="220.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -85,7 +85,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Formal shirt" /> 
+										<input type="hidden" name="w3ls1_item" value="Formal shirt" /> 
 										<input type="hidden" name="amount" value="190.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -106,7 +106,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Blazer" /> 
+										<input type="hidden" name="w3ls1_item" value="Blazer" /> 
 										<input type="hidden" name="amount" value="160.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -127,7 +127,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual shoes" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual shoes" /> 
 										<input type="hidden" name="amount" value="250.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -150,7 +150,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Inner wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Inner wear" /> 
 											<input type="hidden" name="amount" value="50.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -171,7 +171,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Shoes" /> 
+											<input type="hidden" name="w3ls1_item" value="Shoes" /> 
 											<input type="hidden" name="amount" value="150.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -192,7 +192,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Formal shirt" /> 
+											<input type="hidden" name="w3ls1_item" value="Formal shirt" /> 
 											<input type="hidden" name="amount" value="100.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -213,7 +213,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Watch" /> 
+											<input type="hidden" name="w3ls1_item" value="Watch" /> 
 											<input type="hidden" name="amount" value="200.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -238,7 +238,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="220.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -259,7 +259,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="190.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -280,7 +280,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="160.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -301,7 +301,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="250.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -324,7 +324,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="250.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -345,7 +345,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="250.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -366,7 +366,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="350.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -387,7 +387,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="200.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -412,7 +412,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Formal shoes" /> 
+										<input type="hidden" name="w3ls1_item" value="Formal shoes" /> 
 										<input type="hidden" name="amount" value="220.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -433,7 +433,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Formal shirt" /> 
+										<input type="hidden" name="w3ls1_item" value="Formal shirt" /> 
 										<input type="hidden" name="amount" value="190.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -454,7 +454,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Blazer" /> 
+										<input type="hidden" name="w3ls1_item" value="Blazer" /> 
 										<input type="hidden" name="amount" value="160.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -475,7 +475,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual shoes" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual shoes" /> 
 										<input type="hidden" name="amount" value="250.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -498,7 +498,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Inner wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Inner wear" /> 
 											<input type="hidden" name="amount" value="50.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -519,7 +519,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Shoes" /> 
+											<input type="hidden" name="w3ls1_item" value="Shoes" /> 
 											<input type="hidden" name="amount" value="150.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -540,7 +540,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Formal shirt" /> 
+											<input type="hidden" name="w3ls1_item" value="Formal shirt" /> 
 											<input type="hidden" name="amount" value="100.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -561,7 +561,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Watch" /> 
+											<input type="hidden" name="w3ls1_item" value="Watch" /> 
 											<input type="hidden" name="amount" value="200.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -586,7 +586,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="220.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -607,7 +607,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="190.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -628,7 +628,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="160.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -649,7 +649,7 @@
 									<form action="#" method="post">
 										<input type="hidden" name="cmd" value="_cart" />
 										<input type="hidden" name="add" value="1" /> 
-										<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+										<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 										<input type="hidden" name="amount" value="250.00" /> 
 										<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 									</form>
@@ -672,7 +672,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="250.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -693,7 +693,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="250.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -714,7 +714,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="350.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>
@@ -735,7 +735,7 @@
 										<form action="#" method="post">
 											<input type="hidden" name="cmd" value="_cart" />
 											<input type="hidden" name="add" value="1" /> 
-											<input type="hidden" name="cardls1_item" value="Casual wear" /> 
+											<input type="hidden" name="w3ls1_item" value="Casual wear" /> 
 											<input type="hidden" name="amount" value="200.00" /> 
 											<button type="submit" class="cardls-cart pcardls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
 										</form>

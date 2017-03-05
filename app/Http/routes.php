@@ -72,7 +72,7 @@ Route::group(['middleware' => 'auth'], function()
 	Route::get('/add-card','cardController@addCard');
 	Route::post('/add-card','cardController@storeCard');
 	Route::get('/view-card','cardController@viewCard');
-	Route::get('/update-card','cardController@updateCard');
-	Route::post('/update-card','cardController@storeupdatedCard');
+	Route::get('/update-card/{id}','cardController@updateCard');
+	Route::post('/update-card/{id}','cardController@storeupdatedCard');
 	
 });

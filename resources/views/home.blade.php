@@ -160,28 +160,26 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
+
+	<script src="js/custom.js"></script>
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
-	<script src="js/custom.js"></script>
-<!-- 	<script>
-		$('div.alert').not('.alert-important').delay(3000).fadeOut(350);
-	</script> -->
 	<script>
-		// cardls1.render();
+        w3ls1.render();
 
-		// cardls1.cart.on('cardsb1_checkout', function (evt) {
-		// 	var items, len, i;
+        w3ls1.cart.on('w3sb1_checkout', function (evt) {
+        	var items, len, i;
 
-		// 	if (this.subtotal() > 0) {
-		// 		items = this.items();
+        	if (this.subtotal() > 0) {
+        		items = this.items();
 
-		// 		for (i = 0, len = items.length; i < len; i++) {
-		// 			items[i].set('shipping', 0);
-		// 			items[i].set('shipping2', 0);
-		// 		}
-		// 	}
-		// });
-	</script>  
-	<!-- //cart-js -->  
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 0);
+        			items[i].set('shipping2', 0);
+        		}
+        	}
+        });
+    </script>  
+	<!-- //cart-js --> 
 </body>
 </html>`

@@ -445,7 +445,7 @@
         });
 
         var discount = function(percent,original) {
-          return original-(original * percent/100);
+          return parseFloat(original-(original * percent/100)).toFixed(2);
         }
 
         $('#value').keyup(function() {

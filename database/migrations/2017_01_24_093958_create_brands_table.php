@@ -16,6 +16,7 @@ class CreateBrandsTable extends Migration
             $table->increments('id');
             $table->string('brand_name');
             $table->string('brand_slug');
+            $table->string('card_value_link');
             $table->string('brand_image');
             $table->timestamps();
         });
