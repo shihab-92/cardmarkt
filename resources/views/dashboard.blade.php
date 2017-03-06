@@ -63,6 +63,11 @@
                                  <li><a href="/add-category">Add category</a></li>
                                  <li><a href="/add-subcategory">Add Subcategory</a></li>
                                  <li><a href="/view-category">View category & Subcategory</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a><i class="fa fa-edit"></i> Brands management <span class="fa fa-chevron-down"></span></a>
+                              <ul class="nav child_menu">
                                  <li><a href="/add-brand">Add Brand</a></li>
                                  <li><a href="/view-brands">View Brands</a></li>
                               </ul>
@@ -378,10 +383,8 @@
          });
       </script>
       <!-- /Datatables -->
-      
       <!-- validator -->
       <script src="/vendors/validator/validator.js"></script>
-
       <!-- iCheck -->
       <script src="/vendors/iCheck/icheck.min.js"></script>
       <!-- validator -->
@@ -415,54 +418,53 @@
          });
       </script>
       <!-- /validator -->
-
       <script>
-        var slug = function(str) {
-          var $slug = '';
-          var trimmed = $.trim(str);
-          $slug = trimmed.replace(/[^a-z0-9-]/gi, '-').
-          replace(/-+/g, '-').
-          replace(/^-|-$/g, '');
-          return $slug.toLowerCase();
-        }
-
-        $('#category-name').keyup(function() {
-          $('#category-slug').val(slug($('#category-name').val()));
-        });
-        $('#subcategory-name').keyup(function() {
-          $('#subcategory-slug').val(slug($('#subcategory-name').val()));
-        });
-        
-        $('#brand-name').keyup(function() {
-          $('#brand-slug').val(slug($('#brand-name').val()));
-        });
-
-        $('#validity').daterangepicker({
-          singleDatePicker: true,
-          calender_style: "picker_1"
-        }, function(start, end, label) {
-          console.log(start.toISOString(), end.toISOString(), label);
-        });
-
-        var discount = function(percent,original) {
-          return parseFloat(original-(original * percent/100)).toFixed(2);
-        }
-
-        $('#value').keyup(function() {
-          $('#sell_price').val(discount($('#discount').val(),$('#value').val()));
-        });
-
-        $('#discount').keyup(function() {
-          $('#sell_price').val(discount($('#discount').val(),$('#value').val()));
-        });
-
-        $('#card-country').change(function() {
-         if($(this).val()==1){
-          $('#value').attr("placeholder", "Example: 45 CHF");
-         }else{
-          $('#value').attr("placeholder", "Example: 45 EUR");
+         var slug = function(str) {
+           var $slug = '';
+           var trimmed = $.trim(str);
+           $slug = trimmed.replace(/[^a-z0-9-]/gi, '-').
+           replace(/-+/g, '-').
+           replace(/^-|-$/g, '');
+           return $slug.toLowerCase();
          }
-        });
+         
+         $('#category-name').keyup(function() {
+           $('#category-slug').val(slug($('#category-name').val()));
+         });
+         $('#subcategory-name').keyup(function() {
+           $('#subcategory-slug').val(slug($('#subcategory-name').val()));
+         });
+         
+         $('#brand-name').keyup(function() {
+           $('#brand-slug').val(slug($('#brand-name').val()));
+         });
+         
+         $('#validity').daterangepicker({
+           singleDatePicker: true,
+           calender_style: "picker_1"
+         }, function(start, end, label) {
+           console.log(start.toISOString(), end.toISOString(), label);
+         });
+         
+         var discount = function(percent,original) {
+           return parseFloat(original-(original * percent/100)).toFixed(2);
+         }
+         
+         $('#value').keyup(function() {
+           $('#sell_price').val(discount($('#discount').val(),$('#value').val()));
+         });
+         
+         $('#discount').keyup(function() {
+           $('#sell_price').val(discount($('#discount').val(),$('#value').val()));
+         });
+         
+         $('#card-country').change(function() {
+          if($(this).val()==1){
+           $('#value').attr("placeholder", "Example: 45 CHF");
+          }else{
+           $('#value').attr("placeholder", "Example: 45 EUR");
+          }
+         });
       </script>
    </body>
 </html>
