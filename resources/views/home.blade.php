@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Card markt |Europe |card |Markt</title>
+	<title>CardMarkt</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="card market,card markt" />
@@ -75,7 +75,7 @@
 					<li><a href="{{url('/logout')}}"><span class="glyphicon glyphicon-log-in"></span> logout</a></li>
 					@else
 					<li><a href="{{url('/login')}}"><span class="glyphicon glyphicon-log-in"></span> LOGIN |</a></li>
-					<li><a href="{{url('/register')}}"><span class="glyphicon glyphicon-user"></span> REGISTER</a></li>
+					<li><a href="{{url('/register')}}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 					@endif
 					<li class="hidden-xs">
 						<div class="col-md-1 cart-wthree">
@@ -111,7 +111,7 @@
 		<div class="container">
 			<div class="col-md-6 cardagile_newsletter_left">
 				<h3>Newsletter</h3>
-				<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+				<p>Enter your e-mail to subscribe to our Newsletter</p>
 			</div>
 			<div class="col-md-6 cardagile_newsletter_right">
 				<form action="newsletter" method="post">
@@ -129,7 +129,7 @@
 			<div class="col-md-3 footer-grids fgd1">
 				<a href="index.html"><img src="images/logo2.png" alt=" " style="width: 200px;" /></a>
 				<ul>
-					<li><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><a href="mailto:info@cardmarkt.com">info@cardmarkt.com</a></li>
 					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -140,7 +140,7 @@
 				<h4>Information</h4> 
 				<ul>
 					<li><a href="{{url('/contact')}}">Contact Us</a></li>
-					<li><a href="{{url('/about')}}">About Us</a></li>
+					<li><a href="{{url('/about')}}">How it works</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 footer-grids fgd3">

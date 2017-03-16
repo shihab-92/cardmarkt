@@ -802,7 +802,7 @@
 				<div class="clearfix"></div>				
 			</div>
 		</div>
-		<div class="col-md-6 testimonials">
+<!-- 		<div class="col-md-6 testimonials">
 			<div class="test-inner">
 				<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
 					<div class="wmuSliderWrapper">
@@ -830,7 +830,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="clearfix"></div>
 	</div>
 	<script src="js/jquery.wmuSlider.js"></script> 
