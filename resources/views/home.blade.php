@@ -4,6 +4,7 @@
 	<title>CardMarkt</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/png" href="imgages/favicon.ico">
 	<meta name="keywords" content="card market,card markt" />
 	<meta property="og:title" content="Card markt"/>
 	<meta property="og:description" content="Card Markt is one of the fastest growing Card services provider."/>
