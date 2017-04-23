@@ -38,10 +38,8 @@
                            <td>{{ $brand->brand_slug }}</td>
                            <td>
                               @foreach($brand_categories as $key=>$brand_category)
-                                 @if($brand_category->brand_id == $brand->id and $key != ($count-1))
-                                     {{$brand_category->category()->first()->category_name}},
-                                 @else
-                                    {{$brand_category->category()->first()->category_name}}
+                                 @if($brand_category->brand_id == $brand->id)
+                                     <span class="btn-xs btn-info">{{$brand_category->category()->first()->category_name}}</span>
                                  @endif
                               @endforeach
                            </td>

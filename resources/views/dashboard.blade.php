@@ -26,7 +26,7 @@
       <link href="/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
       <link href="/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
       <!-- Custom Theme Style -->
-      <link href="/build/css/custom.min.css" rel="stylesheet">
+      <link href="/build/css/custom.css" rel="stylesheet">
    </head>
    <body class="nav-md">
       <div class="container body">
@@ -384,38 +384,30 @@
       </script>
       <!-- /Datatables -->
       <!-- validator -->
+     <!--  <script src="/vendors/validator/multifield.js"></script> -->
       <script src="/vendors/validator/validator.js"></script>
       <!-- iCheck -->
-      <script src="/vendors/iCheck/icheck.min.js"></script>
+      <!-- <script src="/vendors/iCheck/icheck.min.js"></script> -->
       <!-- validator -->
       <script>
-         // initialize the validator function
-         validator.message.date = 'not a real date';
-         
-         // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
-         $('form')
-           .on('blur', 'input[required], input.optional, select.required', validator.checkField)
-           .on('change', 'select.required', validator.checkField)
-           .on('keypress', 'input[required][pattern]', validator.keypress);
-         
-         $('.multi.required').on('keyup blur', 'input', function() {
-           validator.checkField.apply($(this).siblings().last()[0]);
-         });
-         
-         $('form').submit(function(e) {
-           e.preventDefault();
-           var submit = true;
-         
-           // evaluate the form using generic validaing
-           if (!validator.checkAll($(this))) {
-             submit = false;
-           }
-         
-           if (submit)
-             this.submit();
-         
-           return false;
-         });
+        $( "#brand_form" ).validate({
+          rules: {
+            "brand-category-subcategory[]": {
+              required: true,
+              minlength: 2
+            }
+          },
+          errorPlacement: function(error, element) {
+            if (element.attr("type") == "checkbox" ) {
+              error.appendTo( element.parent().last() );
+            } else {
+              error.insertAfter(element);
+            }
+          }
+        });
+        $("form").validate();
+
+
       </script>
       <!-- /validator -->
       <script>

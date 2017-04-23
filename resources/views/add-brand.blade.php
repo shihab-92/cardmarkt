@@ -18,7 +18,7 @@
                      {!! session('flash_notification.message') !!}
                   </div>
                   @endif
-                  <form class="form-horizontal form-label-left" novalidate action="store-brand" method="POST" enctype="multipart/form-data">
+                  <form class="form-horizontal form-label-left" novalidate action="store-brand" method="POST" enctype="multipart/form-data" id="brand_form">
                      <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                      <p></p>
                      <div class="item form-group">
@@ -54,15 +54,11 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                            @foreach($category as $key=>$categories)
-                             @if($key == 0)
-                             <label class="checkbox-inline" style="margin-left: 0;">
-                             <input class="flat" type="checkbox" name="brand-category-subcategory[]" required="required" data-parsley-mincheck="2" value="{{$categories->id}}"> {{$categories->category_name}}
+                             <div class="col-xs-12 col-md-12">
+                              <label class="checkbox-inline" style="margin-left: 0;">
+                              <input class="flat" type="checkbox"  name="brand-category-subcategory[]"  value="{{$categories->id}}" minlength="2"> {{$categories->category_name}}
                              </label>
-                             @else
-                             <label class="checkbox-inline" style="margin-left: 0;">
-                             <input class="flat" type="checkbox" name="brand-category-subcategory[]" value="{{$categories->id}}"> {{$categories->category_name}}
-                             </label>
-                             @endif
+                             </div>
                            @endforeach
                         </div>
                      </div>

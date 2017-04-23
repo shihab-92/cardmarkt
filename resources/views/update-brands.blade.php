@@ -18,7 +18,7 @@
                      {!! session('flash_notification.message') !!}
                   </div>
                   @endif
-                  <form class="form-horizontal form-label-left" novalidate action="/edit-brand/{{$brands->id}}" method="POST" enctype="multipart/form-data">
+                  <form class="form-horizontal form-label-left" novalidate action="/edit-brand/{{$brands->id}}" method="POST" enctype="multipart/form-data" id="brand_form">
                      <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                      <p></p>
                      <div class="item form-group">
@@ -61,21 +61,14 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                            @foreach($category as $key=>$categories)
-                             @if($key == 0)
+                           <div class="col-xs-12 col-md-12">
                              <label class="checkbox-inline" style="margin-left: 0;">
                              <input class="flat" type="checkbox" name="brand-category-subcategory[]"  data-parsley-mincheck="1" value="{{$categories->id}}" 
                                @foreach($brand_categories as $selectKey=>$brand_category)
                                 {{($categories->id == $brand_categories[$selectKey]->category_id) ? "checked" : " "}}
                                @endforeach> {{$categories->category_name}}
                              </label>
-                             @else
-                             <label class="checkbox-inline" style="margin-left: 0;">
-                             <input class="flat" type="checkbox" name="brand-category-subcategory[]" value="{{$categories->id}}"                                
-                             @foreach($brand_categories as $selectKey=>$brand_category)
-                              {{($categories->id == $brand_categories[$selectKey]->category_id) ? "checked" : " "}}
-                             @endforeach> {{$categories->category_name}}
-                             </label>
-                             @endif
+                             </div>
                            @endforeach
                         </div>
                      </div>
